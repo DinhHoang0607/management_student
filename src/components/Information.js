@@ -1,26 +1,25 @@
 import React from 'react';
-
+import '../App.css';
 const Information = () => {
 	return (
-		<div>
+		<div className='login-box'>
 			<h4>Thông tin cá nhân</h4>
-			<form className='form-inline' action='/action_page.php'>
-				<div className='form-group'>
-					<label for='email'>Email address:</label>
-					<input type='email' className='form-control' id='email' />
+			<form>
+				<div className='user-box'>
+					<input type='text' name='' required='' />
+					<label>Username</label>
 				</div>
-				<div className='form-group'>
-					<label for='pwd'>Password:</label>
-					<input type='password' className='form-control' id='pwd' />
+				<div className='user-box'>
+					<input type='password' name='' required='' />
+					<label>Password</label>
 				</div>
-				<div className='checkbox'>
-					<label>
-						<input type='checkbox' /> Remember me
-					</label>
-				</div>
-				<button type='submit' className='btn btn-default'>
+				<a href='#'>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
 					Submit
-				</button>
+				</a>
 			</form>
 		</div>
 	);
